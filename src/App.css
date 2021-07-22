@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #ffffff;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/*  =============== Header bar component ======================*/
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  margin:  auto -10px;
+  padding: 10px 20px;
+  box-shadow: 0 0 2px 0 rgb(114, 114, 114, 0.4);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-self: center;
+  align-items: center;
+}
+
+.header h3 {
+  font-size: 1.25rem;
+  margin-left: 10px;
+  color: #5f6368;
+}
+
+/*  =============== Form ======================*/
+
+form {
+  position: relative;
+  width: 600px;
+  margin: 32px auto 50px auto;
+  background: #fff;
+  padding: 7px;
+  border-radius: 7px;
+  box-shadow: 0 1px 7px rgb(128, 128, 128);
+}
+
+form input {
+  width: 100%;
+  border: none;
+  padding: 4px 10px;
+  margin-bottom: 20px;
+  outline: none;
+  font-size: 1rem;
+  font-weight: bold;
+  resize: none;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+form textarea {
+  width: 100%;
+  border: none;
+  padding: 4px 10px;
+  outline: none;
+  font-size: 1rem;
+  resize: none;
+  font-weight: 300;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+form button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 18px;
+  bottom: -18px;
+  background: rgb(255, 200, 18);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgb(165, 165, 165);
+  cursor: pointer;
+  outline: none;
+}
+
+
+/*  =============== Note ======================*/
+
+.note {
+  background: #ffffff;
+  width: 240px;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px rgb(175, 175, 175);
+  padding: 10px;
+  margin: 16px;
+  float: left;
+  margin-right: 0;
+}
+
+.note h1 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.note p {
+  font-size: 1rem;
+  color: #000000;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  color: #f88651;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.count {
+  display: flex;
+  margin-top: 20px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
 }
